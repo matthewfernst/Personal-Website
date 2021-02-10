@@ -76,39 +76,17 @@ const Buttons = props =>
 		<Grid container alignContent={'center'} style={{height: '100%'}}>
 			<Grid item>
 				<Grid container spacing={1}>
-					{
-						OS === 'Linux' ?
-							<>
-								<Grid item>
-									<Button startIcon={<GetAppIcon/>}
-											onClick={() => downloadClient('Debian', makeNotReadyMessage)}>
-										Project Explorer (Debian)
-									</Button>
-								</Grid>
-								<Grid item>
-									<Button startIcon={<GetAppIcon/>}
-											onClick={() => downloadClient('Red Hat', makeNotReadyMessage)}>
-										Project Explorer (Red Hat)
-									</Button>
-								</Grid>
-							</> :
-							<Grid item>
-								<Button startIcon={<GetAppIcon/>}
-										onClick={() => downloadClient(OS, makeNotReadyMessage)}>
-									Project Explorer ({OS})
-								</Button>
-							</Grid>
-					}
+
 					<Grid item>
 						<Grid container spacing={2}>
+							{/*<Grid item>*/}
+							{/*	<LinkButtonWithIcon href={'https://www.facebook.com/maxr.rosoff'}*/}
+							{/*						icon={<FacebookIcon/>}>*/}
+							{/*		Facebook*/}
+							{/*	</LinkButtonWithIcon>*/}
+							{/*</Grid>*/}
 							<Grid item>
-								<LinkButtonWithIcon href={'https://www.facebook.com/maxr.rosoff'}
-													icon={<FacebookIcon/>}>
-									Facebook
-								</LinkButtonWithIcon>
-							</Grid>
-							<Grid item>
-								<LinkButtonWithIcon href={'https://www.instagram.com/thenameismr.r/'}
+								<LinkButtonWithIcon href={'https://www.instagram.com/matthew.f.ernst/'}
 													icon={<InstagramIcon/>}>
 									Instagram
 								</LinkButtonWithIcon>
@@ -116,13 +94,13 @@ const Buttons = props =>
 						</Grid>
 						<Grid container spacing={2}>
 							<Grid item>
-								<LinkButtonWithIcon href={'https://www.linkedin.com/in/max-rosoff'}
+								<LinkButtonWithIcon href={'https://www.linkedin.com/in/matthew-f-ernst/'}
 													icon={<LinkedInIcon/>}>
 									LinkedIn
 								</LinkButtonWithIcon>
 							</Grid>
 							<Grid item>
-								<LinkButtonWithIcon href={'https://www.github.com/mrrosoff'} icon={<GitHubIcon/>}>
+								<LinkButtonWithIcon href={'https://github.com/matthewfernst'} icon={<GitHubIcon/>}>
 									GitHub
 								</LinkButtonWithIcon>
 							</Grid>

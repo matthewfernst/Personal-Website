@@ -78,7 +78,7 @@ const HeaderAndReleaseData = props =>
 				<Grid container justify={'center'} alignContent={'center'} alignItems={'center'} direction={'column'}
 					  style={{height: '100%'}}>
 					<Grid item>
-						<Typography>Rosoff OS (BETA PROGRAM)</Typography>
+						<Typography>Ernst OS (BETA PROGRAM)</Typography>
 					</Grid>
 				</Grid>
 			</Grid>
@@ -88,7 +88,7 @@ const HeaderAndReleaseData = props =>
 						<Typography>Released: {creationDate.toString()}</Typography>
 					</Grid>
 					<Grid item>
-						<a href={'https://github.com/mrrosoff/Personal-Website'} target="_blank"
+						<a href={'https://github.com/matthewfernst/Website'} target="_blank"
 						   style={{color: '#FCFCFC', fontSize: 22}}>Open Source (BETA 4.1.2)</a>
 					</Grid>
 				</Grid>
@@ -122,7 +122,7 @@ const SystemInfo = props =>
 								<Typography>Device Name:</Typography>
 							</Grid>
 							<Grid item>
-								<Typography>Rosoff Virtual Machine</Typography>
+								<Typography>Ernst Virtual Machine</Typography>
 							</Grid>
 						</Grid>
 					</Box>

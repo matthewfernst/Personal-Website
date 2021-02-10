@@ -39,7 +39,7 @@ const TerminalEmbed = (props, ref) =>
 				height: '88vh'
 			}}
 			emulatorState={customState}
-			promptSymbol={'dev@rosoff'}
+			promptSymbol={'dev@ernst'}
 			errorStr={'Command Not Found'}
 		/>
 	);

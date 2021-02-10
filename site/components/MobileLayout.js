@@ -29,7 +29,7 @@ const MobileLayout = props =>
 			>
 				<Grid item>
 					<Avatar
-						alt="Max Rosoff"
+						alt="Matthew Ernst"
 						src={Profile}
 						className={classes.largeAvatar}
 					/>
@@ -38,26 +38,26 @@ const MobileLayout = props =>
 					<Grid container direction={'column'} spacing={1}
 						  justify={'center'} alignItems={'center'} alignContent={'center'}
 					>
+						{/*<Grid item>*/}
+						{/*	<LinkButtonWithIcon href={'https://www.facebook.com/maxr.rosoff'}*/}
+						{/*						icon={<FacebookIcon/>}>*/}
+						{/*		Facebook*/}
+						{/*	</LinkButtonWithIcon>*/}
+						{/*</Grid>*/}
 						<Grid item>
-							<LinkButtonWithIcon href={'https://www.facebook.com/maxr.rosoff'}
-												icon={<FacebookIcon/>}>
-								Facebook
-							</LinkButtonWithIcon>
-						</Grid>
-						<Grid item>
-							<LinkButtonWithIcon href={'https://www.instagram.com/thenameismr.r/'}
+							<LinkButtonWithIcon href={'https://www.instagram.com/matthew.f.ernst/'}
 												icon={<InstagramIcon/>}>
 								Instagram
 							</LinkButtonWithIcon>
 						</Grid>
 						<Grid item>
-							<LinkButtonWithIcon href={'https://www.linkedin.com/in/max-rosoff'}
+							<LinkButtonWithIcon href={'https://www.linkedin.com/in/matthew-f-ernst/'}
 												icon={<LinkedInIcon/>}>
 								LinkedIn
 							</LinkButtonWithIcon>
 						</Grid>
 						<Grid item>
-							<LinkButtonWithIcon href={'https://www.github.com/mrrosoff'} icon={<GitHubIcon/>}>
+							<LinkButtonWithIcon href={'https://github.com/matthewfernst'} icon={<GitHubIcon/>}>
 								GitHub
 							</LinkButtonWithIcon>
 						</Grid>
