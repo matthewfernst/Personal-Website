@@ -38,12 +38,6 @@ const MobileLayout = props =>
 						  justify={'center'} alignItems={'center'} alignContent={'center'}
 					>
 						<Grid item>
-							<LinkButtonWithIcon href={'https://www.instagram.com/matthew.f.ernst/'}
-												icon={<InstagramIcon/>}>
-								Instagram
-							</LinkButtonWithIcon>
-						</Grid>
-						<Grid item>
 							<LinkButtonWithIcon href={'https://www.linkedin.com/in/matthew-f-ernst/'}
 												icon={<LinkedInIcon/>}>
 								LinkedIn

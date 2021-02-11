@@ -56,7 +56,7 @@ const DesktopLayout = props =>
 const UserCard = props =>
 {
 	return (
-		<Paper elevation={3} style={{width: 350, height: 265}}>
+		<Paper elevation={3} style={{width: 250, height: 133}}>
 			<Box p={3} style={{position: 'relative', height: '100%'}}>
 				<Buttons {...props} />
 			</Box>
@@ -69,17 +69,8 @@ const Buttons = () =>
 	return (
 		<Grid container alignContent={'center'} style={{height: '100%'}}>
 			<Grid item>
-				<Grid container spacing={1}>
 					<Grid item>
-						<Grid container spacing={2}>
-							<Grid item>
-								<LinkButtonWithIcon href={'https://www.instagram.com/matthew.f.ernst/'}
-													icon={<InstagramIcon/>}>
-									Instagram
-								</LinkButtonWithIcon>
-							</Grid>
-						</Grid>
-						<Grid container spacing={2}>
+						<Grid container spacing={1}>
 							<Grid item>
 								<LinkButtonWithIcon href={'https://www.linkedin.com/in/matthew-f-ernst/'}
 													icon={<LinkedInIcon/>}>
@@ -93,7 +84,6 @@ const Buttons = () =>
 							</Grid>
 						</Grid>
 					</Grid>
-				</Grid>
 			</Grid>
 		</Grid>
 	);
