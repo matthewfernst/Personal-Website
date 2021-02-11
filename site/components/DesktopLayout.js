@@ -2,11 +2,9 @@ import React, {useRef, useState} from 'react';
 
 import {Avatar, Box, Button, Grid, Paper} from '@material-ui/core';
 
-import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import GetAppIcon from '@material-ui/icons/GetApp';
 
 import Profile from '../static/images/profile.jpg';
 
@@ -66,25 +64,14 @@ const UserCard = props =>
 	);
 };
 
-const Buttons = props =>
+const Buttons = () =>
 {
-	const OS = getOS(props.produceSnackBar);
-	let notReadyMessage = 'This Feature Will Be Available In A Future Release';
-	let makeNotReadyMessage = () => props.produceSnackBar(notReadyMessage, 'info');
-
 	return (
 		<Grid container alignContent={'center'} style={{height: '100%'}}>
 			<Grid item>
 				<Grid container spacing={1}>
-
 					<Grid item>
 						<Grid container spacing={2}>
-							{/*<Grid item>*/}
-							{/*	<LinkButtonWithIcon href={'https://www.facebook.com/maxr.rosoff'}*/}
-							{/*						icon={<FacebookIcon/>}>*/}
-							{/*		Facebook*/}
-							{/*	</LinkButtonWithIcon>*/}
-							{/*</Grid>*/}
 							<Grid item>
 								<LinkButtonWithIcon href={'https://www.instagram.com/matthew.f.ernst/'}
 													icon={<InstagramIcon/>}>
@@ -127,89 +114,5 @@ export const LinkButtonWithIcon = props =>
 	);
 };
 
-const getOS = (produceSnackBar) =>
-{
-	let userAgent = window.navigator.userAgent;
-	let platform = window.navigator.platform;
-
-	let macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'];
-	let windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'];
-	let iosPlatforms = ['iPhone', 'iPad', 'iPod'];
-	let os = null;
-
-	if(macosPlatforms.indexOf(platform) !== -1)
-	{
-		os = 'Mac OS';
-	}
-
-	else if(iosPlatforms.indexOf(platform) !== -1)
-	{
-		os = 'iOS';
-	}
-
-	else if(windowsPlatforms.indexOf(platform) !== -1)
-	{
-		os = 'Windows';
-	}
-
-	else if(/Android/.test(userAgent))
-	{
-		os = 'Android';
-	}
-
-	else if(/Linux/.test(platform))
-	{
-		os = 'Linux';
-	}
-
-	else
-	{
-		produceSnackBar('You are using an unspecified platform. Some effects may not operate correctly.', 'warning');
-	}
-
-	return os;
-};
-
-const downloadClient = (OS, makeNotReadyMessage) =>
-{
-	let version = '1.7.2';
-
-	if(OS === 'Debian')
-	{
-		makeNotReadyMessage();
-		// doDownload("https://github.com/mrrosoff/Project-Explorer/releases/latest/download/project-explorer_" + version + "_amd64.deb");
-	}
-
-	else if(OS === 'Red Hat')
-	{
-		makeNotReadyMessage();
-		// doDownload("https://github.com/mrrosoff/Project-Explorer/releases/latest/download/project-explorer-" + version + "-1.x86_64.rpm");
-	}
-
-	else if(OS === 'Windows')
-	{
-		doDownload('https://github.com/mrrosoff/Project-Explorer/releases/latest/download/project-explorer-' + version + '.Setup.exe');
-	}
-
-	else if(OS === 'Mac OS')
-	{
-		doDownload('https://github.com/mrrosoff/Project-Explorer/releases/latest/download/Project-Explorer.dmg');
-	}
-
-	else
-	{
-		makeNotReadyMessage();
-	}
-};
-
-const doDownload = (link) =>
-{
-	let a = document.createElement('a');
-	a.href = link;
-	a.download = 'project-explorer.deb';
-	document.body.appendChild(a);
-	a.click();
-	setTimeout(() => document.body.removeChild(a), 0);
-};
 
 export default DesktopLayout;
