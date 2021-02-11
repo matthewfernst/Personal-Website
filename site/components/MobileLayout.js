@@ -3,7 +3,6 @@ import React from 'react';
 import {Avatar, Button, Grid} from '@material-ui/core';
 import {makeStyles} from '@material-ui/core/styles';
 
-import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
@@ -38,12 +37,6 @@ const MobileLayout = props =>
 					<Grid container direction={'column'} spacing={1}
 						  justify={'center'} alignItems={'center'} alignContent={'center'}
 					>
-						{/*<Grid item>*/}
-						{/*	<LinkButtonWithIcon href={'https://www.facebook.com/maxr.rosoff'}*/}
-						{/*						icon={<FacebookIcon/>}>*/}
-						{/*		Facebook*/}
-						{/*	</LinkButtonWithIcon>*/}
-						{/*</Grid>*/}
 						<Grid item>
 							<LinkButtonWithIcon href={'https://www.instagram.com/matthew.f.ernst/'}
 												icon={<InstagramIcon/>}>

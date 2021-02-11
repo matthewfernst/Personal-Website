@@ -27,7 +27,7 @@ const DesktopLayout = props =>
 						  justify={'flex-end'} alignItems={'flex-end'} spacing={2}>
 						<Grid item>
 							<Avatar
-								alt="Max Rosoff"
+								alt="Matthew Ernst"
 								src={Profile}
 								onClick={() => setOpen(!open)}
 							/>

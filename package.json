@@ -7,7 +7,7 @@
     "start": "webpack-dev-server -d",
     "build": "npm run clean && npm install && webpack -p"
   },
-  "author": "Max Rosoff",
+  "author": "Matthew Ernst",
   "license": "MIT",
   "dependencies": {
     "@material-ui/core": "^4.11.2",

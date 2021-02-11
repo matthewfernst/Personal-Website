@@ -38,7 +38,7 @@ const BootUp = props =>
 			</Grid>
 			{state >= 1 ?
 				<Grid item>
-					AF6S7V89 - JUC84X
+					C02WC677 - HTD5X4
 				</Grid> : null}
 			{state >= 2 ?
 				<Grid item>
@@ -89,7 +89,7 @@ const HeaderAndReleaseData = props =>
 					</Grid>
 					<Grid item>
 						<a href={'https://github.com/matthewfernst/Website'} target="_blank"
-						   style={{color: '#FCFCFC', fontSize: 22}}>Open Source (BETA 4.1.2)</a>
+						   style={{color: '#FCFCFC', fontSize: 18}}>Open Source (BETA 5.1.7)</a>
 					</Grid>
 				</Grid>
 			</Grid>
@@ -136,12 +136,12 @@ const SystemInfo = props =>
 							</Grid>
 							<Grid item>
 								<Typography>
-									{props.state === 6 ? '20KB' :
-										props.state === 7 ? '87KB' :
-											props.state === 8 ? '173KB' :
-												props.state === 9 ? '837KM' :
-													props.state === 10 ? '1.1MB' :
-														'2.0MB'
+									{props.state === 6 ? '20MB' :
+										props.state === 7 ? '87MB' :
+											props.state === 8 ? '173MB' :
+												props.state === 9 ? '837MB' :
+													props.state === 10 ? '1.1GB' :
+														'8.0GB'
 									}
 								</Typography>
 							</Grid>
@@ -159,7 +159,7 @@ const DriveInfo = props =>
 			{props.state >= 12 ?
 				<Grid item>
 					<header>
-						<Typography> Detecting Primary Drive (C) . . . . . .
+						<Typography> Detecting Primary Drive (HD) . . . . . .
 							{props.state >= 13 ? <span style={{color: '#2BC903'}}> SUCCESS </span> : null}
 						</Typography>
 					</header>
@@ -167,7 +167,7 @@ const DriveInfo = props =>
 			{props.state >= 14 ?
 				<Grid item>
 					<header>
-						<Typography> Detecting Secondary Drive (D) . . . . . .
+						<Typography> Detecting Secondary Drive (C) . . . . . .
 							{props.state >= 15 ? <span style={{color: '#2BC903'}}> SUCCESS </span> : null}
 						</Typography>
 					</header>
