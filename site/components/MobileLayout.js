@@ -7,7 +7,7 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 
-import Profile from '../static/images/profile.jpg';
+import Profile from '../static/images/profile.png';
 
 const useStyles = makeStyles((theme) => ({
 	largeAvatar: {

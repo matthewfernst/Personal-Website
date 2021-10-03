@@ -1,0 +1,19 @@
+# Mac Files
+.DS_Store
+
+# Node
+package-lock.json
+node_modules
+
+# Output Files
+
+build
+coverage
+dist
+lib
+out
+
+# Server Files
+
+dependency-reduced-pom.xml
+target
